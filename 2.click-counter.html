@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Click Counter</title>
+</head>
+
+<body>
     <button onclick="clickCounter()">Click Counter</button>
-   <hr>
-   Counter: 
-   <p id="click-counter"></p>
+    <hr>
+    Counter:
+    <p id="click-counter"></p>
     <script>
         const counterDom = document.getElementById('click-counter');
         let counter = 0;
         counterDom.innerText = counter;
 
-        const clickCounter = ()=>{  
+        const clickCounter = () => {
             counter++;
             counterDom.innerText = counter;
         }
     </script>
-</head>
-<body>
-    
 </body>
+
 </html>

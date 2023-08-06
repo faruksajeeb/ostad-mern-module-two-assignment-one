@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Switcher</title>
+</head>
+<body>
+    <button id="button-one" onclick="imageSwitcher(1)">Switch to Image 1</button>
+    <button id="button-two" onclick="imageSwitcher(2)">Switch to Image 2</button>
+    <hr>
+    <div>
+        <img id="imageDisplay" src="image1.jpg" width="300" height="200" alt="Image">
+    </div>
+    <script>
+        const imgDiv = document.getElementById('imageDisplay');
+        const imageSwitcher = (val)=>{
+            imgDiv.src="image"+val+".jpg";
+        }
+    </script>
+</body>
+</html>
