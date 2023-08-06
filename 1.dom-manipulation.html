@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+    <button onclick="changeElement()">Change Dom Element</button>
+    <br/>
+    <div id="my-dom" style="width: 200px; height:200px; background-color:red;margin-top:5px">Hello Ostad!</div>
+
+    <script>
+        const changeElement = ()=>{
+            let myDom = document.querySelector("#my-dom");
+            myDom.style.backgroundColor  = "green";
+            myDom.innerHTML = "<h1>Hello DOM!</h1>";
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
