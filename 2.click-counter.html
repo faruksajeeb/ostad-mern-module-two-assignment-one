@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Click Counter</title>
-    <button onclick="">Change Dom Element</button>
-   
+    <button onclick="clickCounter()">Click Counter</button>
+   <hr>
+   Counter: 
+   <p id="click-counter"></p>
     <script>
-    
+        const counterDom = document.getElementById('click-counter');
+        let counter = 0;
+        counterDom.innerText = counter;
+
+        const clickCounter = ()=>{  
+            counter++;
+            counterDom.innerText = counter;
+        }
     </script>
 </head>
 <body>
